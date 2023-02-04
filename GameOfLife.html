@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameOfLife</title>
+        <script language="javascript" type="text/javascript" src="GameOfLife.js"></script>
+        <link rel="stylesheet" href="GameOfLife.css">
+    </head>
+    <body onload="main()">
+        <header>Made By: Auer, Tran, Edlinger<span title = "Class & Name: 2BHIF, Auer Samuel, Tran Vi Dong, Edlinger Marc"></span></header>
+        <h1>Game Of Life</h1>
+        <p id="text1">This is our Game of Life :]</p>  
+        <div id = "right">
+            <h2 id = "h4">Examples</h2>
+            <button id = "right" onclick = "Ex1()">Example 1</button><br>   
+            <button id = "right" onclick = "Ex2()">Example 2</button><br>   
+            <button id = "right" onclick = "Ex3()">Example 3</button><br>   
+            <button id = "right" onclick = "Ex4()">Example 4</button><br>   
+            <button id = "right" onclick = "Ex5()">Example 5</button><br></div>
+        <pre id = "left">
+            <h2>Regeln</h2>
+            1. Wenn die Zelle genau drei Nachbarn hat
+               wird sie zum Leben erweckt.
+            2. Wenn die Zelle mehr als drei Nachbarn hat
+               stirbt sie.
+            3. Wenn sie zwei Nachbarn hat
+               bleibt sie am Leben.
+            
+               <img src = "Rules.png" width="300">
+        </pre>
+        <div id="ph1"></div>
+        <button onclick="next()" class="center">Next Generation</button>
+        <button onclick="restart()" class="center">Clear</button>
+        <button id="b1" class="center" onclick="changeLoopState(true)">▶️</button>
+        <button id="b2" class="center" onclick="changeLoopState(false)">⏹</button>
+    </body>
+</html> 
